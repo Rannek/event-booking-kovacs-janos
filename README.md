@@ -43,6 +43,15 @@ Ez a módszer platformfüggetlen (Windows, macOS, Linux) és nem igényel helyil
     ```bash
     cp .env.example .env
     ```
+**.env**
+```
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=esemenykezelo
+DB_USERNAME=sail
+DB_PASSWORD=password
+```
 
 3.  **Docker konténerek indítása:**
     Ez a parancs letölti a szükséges image-eket és elindítja a környezetet a háttérben. Az első indítás több percig is tarthat.
