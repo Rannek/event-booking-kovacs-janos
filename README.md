@@ -35,7 +35,7 @@ Ez a módszer platformfüggetlen (Windows, macOS, Linux) és nem igényel helyil
 
 1.  **Projekt klónozása:**
     ```bash
-    git clone <repository_url> esemenykezelo
+    git clone https://github.com/Rannek/event-booking-kovacs-janos/ esemenykezelo
     cd esemenykezelo
     ```
 
