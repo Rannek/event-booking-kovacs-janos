@@ -59,8 +59,6 @@ Ez a módszer platformfüggetlen (Windows, macOS, Linux) és nem igényel helyil
     ```bash
     ./vendor/bin/sail up -d
     ```
-    *(Javaslat: Állíts be egy `alias sail='bash vendor/bin/sail'` aliast a `.bashrc` vagy `.zshrc` fájlodban a kényelmesebb használatért.)*
-
 5.  **Alkalmazás kulcs generálása:**
     ```bash
     ./vendor/bin/sail artisan key:generate
