@@ -46,17 +46,27 @@ Ez a módszer platformfüggetlen (Windows, macOS, Linux) és nem igényel helyil
 
 3.  **Docker konténerek indítása:**
     Ez a parancs letölti a szükséges image-eket és elindítja a környezetet a háttérben. Az első indítás több percig is tarthat.
+
+    ```bash
+    docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v "$(pwd)":/var/www/html \
+    -w /var/www/html \
+    laravelsail/php84-composer:latest \
+    composer install --ignore-platform-reqs
+    ```
+    
     ```bash
     ./vendor/bin/sail up -d
     ```
     *(Javaslat: Állíts be egy `alias sail='bash vendor/bin/sail'` aliast a `.bashrc` vagy `.zshrc` fájlodban a kényelmesebb használatért.)*
 
-4.  **Alkalmazás kulcs generálása:**
+5.  **Alkalmazás kulcs generálása:**
     ```bash
     ./vendor/bin/sail artisan key:generate
     ```
 
-5.  **Adatbázis létrehozása és feltöltése mintaadatokkal:**
+6.  **Adatbázis létrehozása és feltöltése mintaadatokkal:**
     Ez a parancs létrehozza az adatbázis-struktúrát és feltölti a szükséges mintaadatokkal (admin, felhasználó, események).
     ```bash
     ./vendor/bin/sail artisan migrate:fresh --seed
