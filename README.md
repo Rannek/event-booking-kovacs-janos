@@ -1,3 +1,12 @@
+### Főoldal
+![Főoldal](Fooldal.png)
+
+### Foglalás
+![Foglalásaim](Foglalas.png)
+
+### Foglalásaim
+![Foglalás](Foglalasaim.png)
+
 # Eseménykezelő és Jegyfoglaló Mini Alkalmazás (Laravel API)
 
 Ez egy egyszerűsített Laravel 12 alkalmazás, amely egy REST API-t biztosít események kezelésére és jegyfoglalásra. A fejlesztői környezet Docker-alapú, a Laravel Sail segítségével futtatható.
