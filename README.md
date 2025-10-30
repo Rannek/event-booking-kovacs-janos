@@ -87,14 +87,16 @@ DB_PASSWORD=password
     ```bash
     ./vendor/bin/sail artisan migrate:fresh --seed
     ```
-# Frontend
+# Frontend telepítése
+```bash
 cd frontend
-
-# Telepítése
+```
+```bash
 npm install
-
-# Fejlesztői szerver indítása
+```
+```bash
 npm run dev
+```
 ### Az alkalmazás használata
 
 - Az **API** a `http://localhost/api/` címen érhető el.
